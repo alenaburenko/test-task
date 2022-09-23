@@ -1,0 +1,55 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+.footer {
+    background: #f7f7f7;
+    padding: 26px 267px 14px 267px;
+    &-menu {
+      padding-bottom: 38px;
+      display: flex;
+      justify-content: space-between;
+      &-item {
+        cursor: pointer;
+        img {
+          display: none;
+        }
+        &-header {
+          font: {
+            size: 16px;
+            family: "Cormorant Garamond";
+            weight: bold;
+          }
+          margin-bottom: 17px;
+        }
+      }
+      span {
+        width: 100%;
+        height: 1px;
+        background-color: #e1e0e1;
+        margin: 0;
+      }
+    }
+    &-submenu {
+      display: flex;
+      flex-direction: column;
+      li{
+        display: block;
+        margin-bottom: 6px;
+      }
+      
+      a {
+        text-decoration: none;
+        color: black;
+        
+      }
+    }
+    p {
+      width: fit-content;
+      font-size: 9px;
+      margin: 0 auto;
+    }
+  }
+  .social-media-icons {
+    img {
+      margin-right: 16px;
+    }
+  }

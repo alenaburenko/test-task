@@ -1,0 +1,208 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.supheader {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0 2em;
+    .deliver{
+  position:absolute;
+  left:534px;
+    }
+  }
+  .our-stores {
+    @include flex;
+    p {
+      padding-top: 2px;
+      margin-left: 7px;
+    }
+  }
+  .home-section {
+    background: url("../img/9193579.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: $base-color;
+    @include flex;
+    flex-direction: column;
+    h1 {
+      font-weight: 700;
+      font-size: 60px;
+      margin: 160px 0;
+    }
+  }
+  .input-bg {
+    background-color: rgba(255, 255, 255, 0.247);
+    @include flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 37%;
+    height: 48px;
+    border-radius: 3px;
+    padding: 0 1%;
+  
+    .input_looking_for {
+      border: none;
+      background: rgba(255, 255, 255, 0);
+      @include font;
+      font-weight: bold;
+      outline: none;
+      height: 48px;
+      width: 100%;
+      color: $base-color;
+      &::placeholder {
+        color: #FFFFFF;
+      }
+      &:focus::-webkit-input-placeholder {
+        color: transparent;
+      }
+    }
+    .inputOtherPlaceHolder{
+      border: none;
+      background: #F2F2F2;
+      @include font;
+      font-weight: bold;
+      outline: none;
+      height: 48px;
+      width: 100%;
+      color: $base-color;
+      &::placeholder {
+        color: $base-color-dark;
+      }
+      &:focus::-webkit-input-placeholder {
+        color: transparent;
+      }
+    }
+    .search-icon {
+      background: url(../img/search.png);
+      width: 16px;
+      height: 16px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .mobile-icon-group {
+    display: none;
+    img:first-child {
+      width: 22px;
+      height: 17px;
+      cursor: pointer;
+    }
+    img:last-child {
+      margin-left: 13px;
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
+    }
+  }
+  .header-wrapper {
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(51, 51, 51, 0.3) 14.31%,
+      rgba(27, 27, 27, 0.12) 58.6%,
+      rgba(0, 0, 0, 0.0001) 100%
+    );
+    mix-blend-mode: normal;
+    padding-bottom: 24px;
+  }
+  .bg-change{
+      background: $base-color;
+  }
+  .header {
+    padding: 1.4em 2em 0px;
+    @include flex;
+    justify-content: space-between;
+    align-self: stretch;
+    font-size: 11px;
+    font-weight: 600;
+  
+    a {
+      text-decoration: none;
+      color: $base-color;
+      font-size: 38px;
+      font-weight: 700;
+    }
+  }
+  .login {
+    @include flex;
+    &-buttons {
+      display: flex;
+      padding-top: 6px;
+      > a {
+        margin: 0 10px;
+        font-size: 11px;
+        font-weight: 600;
+      }
+    }
+  }
+  .btn-register{
+      cursor: pointer;
+  }
+  .basket-wrap {
+    @include flex;
+    img {
+      cursor: pointer;
+    }
+  }
+  .basket-counter {
+    display: none;
+    margin-left: 5px;
+    background-color: #f2da91;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 10px;
+    color: $base-color-dark;
+  }
+  .home-menu {
+    margin: 9px 0 0 0;
+    display: flex;
+    justify-content: center;
+    ul{
+      @include flex;
+    }
+    li{
+      display: block;
+    }
+    a {
+      text-decoration: none;
+      color: $base-color;
+      font-weight: 600;
+      font-size: 13px;
+      margin: 5px 20px;
+    }
+  }
+  
+  .form-section {
+    width: 25%;
+    margin: 32px auto;
+    p {
+      margin-bottom: 14px;
+    }
+    form {
+      display: flex;
+      input {
+        padding: 5px 10px;
+        width: 70%;
+        margin-right: 12px;
+        font-size: 10px;
+       @include font;
+        border: 1px solid #e1e0e1;
+        border-radius: 3px;
+      }
+      button {
+        width: auto;
+        @include font;
+        background-color: $base-color-dark;
+        color: $base-color;
+        font-size: 10px;
+        padding: 5px 15px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .supheader-burger{
+      display: none;
+  }
