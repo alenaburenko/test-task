@@ -4,6 +4,18 @@ const closeSearchIcon = document.getElementById("close_search_icon");
 const searchBar = document.getElementById("search_bar");
 const header = document.getElementById("header");
 const closeBurger = document.getElementById("close_burger");
+const burgerContainer = document.getElementById("burger-container");
+const burgerCont = document.getElementById("contain");
+const womenId = document.getElementById("women");
+const ourStories = document.createElement("div");
+const deliver = document.createElement("p");
+const burgerScreen = document.getElementById("burger_screen");
+const createHeaderContainer = document.createElement("div");
+const login = document.querySelector(".login-switch");
+const loginBurger = document.querySelector(".log-burger");
+const input = document.querySelector(".input_looking_for");
+const search = document.querySelector(".search-icon");
+const bgInput = document.querySelector(".input-bg");
 
 searchIcon.addEventListener("click", () => {
   if (searchBar.classList.contains("input-mobile-show")) {
@@ -24,21 +36,15 @@ closeBurger.addEventListener("click", () => {
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const login = document.querySelector(".l");
-const loginBurger = document.querySelector(".log-burger");
 label = true;
-const input = document.querySelector(".input_looking_for");
-const search = document.querySelector(".search-icon");
-const bgInput = document.querySelector(".input-bg");
 login.addEventListener("click", () => {
   if (label) {
     label = false;
     search.style.filter = "brightness(0)";
     bgInput.style.backgroundColor = "#F2F2F2";
-    input.style.backgroundColor = "#F2F2F2";
     input.className = "inputOtherPlaceHolder";
     document.getElementById("top-side").style.backgroundImage =
-      "url(../img/hp-oh-hi.png)";
+      "url(./../img/hp-oh-hi.png)";
     document.getElementById("header").classList.add("bg-change");
     [...document.querySelectorAll(".text-color")].map((elem) => {
       elem.style.color = "#000";
@@ -73,8 +79,6 @@ loginBurger.addEventListener("click", () => {
     search.style.filter = "brightness(0)";
     searchIcon.style.filter = "brightness(0)";
     burgerIcon.style.filter = "brightness(0)";
-    bgInput.style.backgroundColor = "#F2F2F2";
-    input.style.backgroundColor = "#F2F2F2";
     input.className = "inputOtherPlaceHolder";
     document.getElementById("top-side").style.backgroundImage =
       "url(../img/hp-oh-hi.png)";
@@ -89,6 +93,9 @@ loginBurger.addEventListener("click", () => {
       '<a href="#" class="basket"><img style="filter: brightness(0);" src="img/basket.png" alt="basket"><img style="margin-left:8px" src="img/Group.png" alt="basket"></a>';
   } else {
     label = true;
+    input.className = "input_looking_for";
+    burgerIcon.style.filter = "brightness(1)";
+    searchIcon.style.filter = "brightness(1)";
     [...document.querySelectorAll(".text-color")].map((elem) => {
       elem.style.color = "#FFF";
     });
@@ -144,15 +151,6 @@ const clothingList = {
     },
   ],
 };
-
-const burgerContainer = document.getElementById("burger-container");
-const burgerCont = document.getElementById("contain");
-const womenId = document.getElementById("women");
-
-const ourStories = document.createElement("div");
-const deliver = document.createElement("p");
-const burgerScreen = document.getElementById("burger_screen");
-const createHeaderContainer = document.createElement("div");
 
 womenId.addEventListener("click", (e) => {
   const list = document.createElement("ul");

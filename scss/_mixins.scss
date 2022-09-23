@@ -1,0 +1,21 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+  }
+  @mixin view-all {
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 1.2px;
+        color:#000;
+        font-weight: 600;
+  }
+  @mixin font {
+    font-family: "Poppins";
+  }
+  @mixin ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    @include font();
+  }

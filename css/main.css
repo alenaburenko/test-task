@@ -7,8 +7,8 @@ ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
-  font-size: 12px; }
+  font-size: 12px;
+  font-family: "Poppins"; }
 
 .supheader {
   display: flex;
@@ -32,10 +32,10 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  color: white;
+  color: #FFFFFF;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .home-section h1 {
     font-weight: 700;
     font-size: 60px;
@@ -44,8 +44,8 @@ ul {
 .input-bg {
   background-color: rgba(255, 255, 255, 0.247);
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   width: 37%;
   height: 48px;
@@ -59,22 +59,22 @@ ul {
     outline: none;
     height: 48px;
     width: 100%;
-    color: white; }
+    color: #FFFFFF; }
     .input-bg .input_looking_for::placeholder {
-      color: white; }
+      color: #FFFFFF; }
     .input-bg .input_looking_for:focus::-webkit-input-placeholder {
       color: transparent; }
   .input-bg .inputOtherPlaceHolder {
     border: none;
-    background: rgba(255, 255, 255, 0);
+    background: #F2F2F2;
     font-family: "Poppins";
     font-weight: bold;
     outline: none;
     height: 48px;
     width: 100%;
-    color: white; }
+    color: #FFFFFF; }
     .input-bg .inputOtherPlaceHolder::placeholder {
-      color: #000; }
+      color: #000000; }
     .input-bg .inputOtherPlaceHolder:focus::-webkit-input-placeholder {
       color: transparent; }
   .input-bg .search-icon {
@@ -103,19 +103,19 @@ ul {
   padding-bottom: 24px; }
 
 .bg-change {
-  background: #FFF; }
+  background: #FFFFFF; }
 
 .header {
   padding: 1.4em 2em 0px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   align-self: stretch;
   font-size: 11px;
   font-weight: 600; }
   .header a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     font-size: 38px;
     font-weight: 700; }
 
@@ -146,19 +146,20 @@ ul {
   border-radius: 50%;
   padding: 3px;
   font-size: 10px;
-  color: black; }
+  color: #000000; }
 
 .home-menu {
   margin: 9px 0 0 0;
   display: flex;
   justify-content: center; }
   .home-menu ul {
-    display: flex; }
+    display: flex;
+    align-items: center; }
   .home-menu li {
     display: block; }
   .home-menu a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     font-weight: 600;
     font-size: 13px;
     margin: 5px 20px; }
@@ -181,8 +182,8 @@ ul {
     .form-section form button {
       width: auto;
       font-family: "Poppins";
-      background-color: black;
-      color: white;
+      background-color: #000000;
+      color: #FFFFFF;
       font-size: 10px;
       padding: 5px 15px;
       letter-spacing: 1px; }
@@ -319,9 +320,9 @@ ul {
       font-size: 11px;
       line-height: 16px;
       letter-spacing: 1.2px;
-      text-transform: uppercase;
       color: #000;
-      font-weight: 600; }
+      font-weight: 600;
+      text-transform: uppercase; }
     .view-all > a {
       font-size: 11px;
       line-height: 16px;
@@ -338,8 +339,8 @@ ul {
       padding-bottom: 0; }
       .footer-menu-item {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
         position: relative; }
         .footer-menu-item::after {
           position: absolute;
@@ -393,4 +394,8 @@ ul {
       display: block;
       height: 1px;
       background: #F7F7F7;
-      width: 100%; } }
+      width: 100%; }
+  .social-media-icons {
+    margin-top: 17px;
+    margin-bottom: 17px;
+    text-align: center; } }
