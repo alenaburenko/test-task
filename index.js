@@ -80,7 +80,7 @@ loginBurger.addEventListener("click", () => {
     searchIcon.style.filter = "brightness(0)";
     burgerIcon.style.filter = "brightness(0)";
     input.className = "inputOtherPlaceHolder";
-    document.getElementById("top-side").style.background =
+    document.getElementById("top-side").style.backgroundImage =
       "url(img/hp-oh-hi.png)";
     document.getElementById("header").classList.add("bg-change");
     [...document.querySelectorAll(".text-color")].map((elem) => {
@@ -101,8 +101,9 @@ loginBurger.addEventListener("click", () => {
     });
     search.style.filter = "";
     document.getElementById("header").classList.remove("bg-change");
-    document.getElementById("top-side").style.background =
+    document.getElementById("top-side").style.backgroundImage =
       "url(img/9193579.png)";
+
     login.innerHTML =
       '<a href="#">Sign in</a><span> | </span><a href="#">Register</a>';
     const chest = document.querySelector(".basket-wrap");
